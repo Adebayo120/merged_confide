@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+<body class="overflow-hidden pb-5 pb-sm-0">
+        <div class="container-fluid ">
+         <div class="row justify-content-between shadow">
+           <nav class="navbar navbar-expand-lg d-flex align-center navbar-success">
+            <a href="index.html"><img src="img/confide.svg" class="navbar-brand ml-3 ml-md-5 img-fluid animated rotateInDownLeft fast" alt=""></a>
+            </nav>
+           <nav class="navbar navbar-expand-lg navbar-light">
+            <a type="button" href="gratitude_page.html" class="btn btn-success mr-2 mr-md-5 animated rotateInDownRight fast">Become a Volunteer</a>
+            </nav> 
+         </div> 
+         <div class="container">
+            <div class="row mt-5 offset-1">
+                <h3 class="text-muted mb-4">Hi there, i am jummy and you are?</h3>
+             </div>
+           <div class="row offset-1">
+             <div class="col-lg-6">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="text-muted mb-2">Enter your full name</label>
+                        <input type="text" class="form-control form-control-sm w-75" id="username" aria-describedby="emailHelp">
+                      </div>
+                      <div class="text-muted mt-4 mb-2">What is your gender</div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">male</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">female</label>
+                      </div>
+                      <div class="form-group">
+                          <label for="email" class="text-muted mb-2 mt-4">Enter Your Email address</label>
+                          <input type="email" class="form-control form-control-sm w-75" placeholder="Eg Annie@email.com " id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="text-muted mb-2 mt-4">Enter Your Phone Number</label>
+                            <div class="d-flex w-75">
+                            <select class="form-control form-control-sm w-25 mr-2" id="phone">
+                                    <option>234</option>
+                            </select>
+                            <input type="text" class="form-control form-control-sm w-75" placeholder="23456789" id="phone" aria-describedby="emailHelp">
+                            </div>
+                          </div>
+                      
+
+             </div>
+             <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="country" class="text-muted mb-2 mt-4 mt-lg-0">Your country</label>
+                        <select class="form-control form-control-sm w-75" id="country">
+                            <option>-select-</option>
+                            <option>Nigeria</option>
+                            <option>Spain</option>
+                            <option>France</option>
+                            <option>Argentina</option>
+                            <option>Italy</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="state" class="text-muted mb-2 mt-4 mt-lg-2">Your state</label>
+                            <select class="form-control form-control-sm w-75" id="state">
+                                <option>-select-</option>
+                                <option>Lagos</option>
+                                <option>Oyo</option>
+                                <option>Sokoto</option>
+                                <option>Kaduna</option>
+                                <option>Delta</option>
+                            </select>
+                            </div>
+                            <p class="text-muted mt-4 mt-lg-2 mb-2">which area do you need counselling<small class="color">(you can select multiple places)</small></p>
+                            <div class="d-flex justify-content-between justify-content-md-start">
+                              <input type="checkbox" name="counselarea[]" id="addiction" class="d-none" value="addiction"><label for="addiction" class="mr-lg-3 border border-dark rounded-lg py-1 px-2 main">Addiction</label>
+                              <input type="checkbox" name="counselarea[]" id="abuse" class="d-none" value="abuse"><label for="abuse" class="mr-lg-3 border border-dark rounded-lg py-1 px-2 main">Abuse</label>
+                              <input type="checkbox" name="counselarea[]" id="anger" class="d-none" value="anger"><label for="anger" class="mr-lg-3 border border-dark rounded-lg py-1 px-2 main">Anger</label>
+                              <input type="checkbox" name="counselarea[]" id="anxiety" class="d-none" value="anxiety"><label for="anxiety" class="mr-lg-3 border border-dark rounded-lg py-1 px-2 main">Anxiety</label>
+                              <input type="checkbox" name="counselarea[]" id="depression" class="d-none" value="depression"><label for="depression" class="mr-lg-3 border border-dark rounded-lg py-1 px-2 main">Depression</label>
+                                  </div>
+                            <div class="mt-4">
+                              <input type="checkbox" name="counselarea[]" id="guidiance & career" class="d-none" value="guidiance & career"><label for="guidiance & career" class="mr-sm-1 mr-lg-2 border border-dark rounded-lg py-1 px-0 px-lg-2 main">Guidiance & Career</label>
+                              <input type="checkbox" name="counselarea[]" id="marriage & family" class="d-none" value="marriage & family"><label for="marriage & family" class="mr-sm-1 mr-lg-2 border border-dark rounded-lg py-1 px-0 px-lg-2 main">Marriage & Family</label>
+                              <input type="checkbox" name="counselarea[]" id="relationship" class="d-none" value="relationship"><label for="relationship" class=" border border-dark rounded-lg py-1 px-0 px-lg-2 main">Relationship</label>
+                               </div>
+                            <div class="mt-4 mb-5 mb-lg-3">
+                              <input type="checkbox" name="counselarea[]" id="rehabilitation" class="d-none" value="rehabilitation"><label for="rehabilitation" class=" border border-dark rounded-lg py-1 px-2 mr-2 main">Rehabilitation</label>
+                              <input type="checkbox" name="counselarea[]" id="trauma" class="d-none" value="trauma"><label for="trauma" class=" border border-dark rounded-lg py-1 px-2 turn main">Trauma</label>
+                            </div> 
+                          </div>  
+                          <div class="row offset-3">
+                            <div class="col-6">
+                            <button type="submit" class="btn btn-success px-5 mt-2 mt-lg-0 d-flex fljustify-content-end">Continue</button>
+                            </div>
+                          </div>  
+                  </form>
+           </div>
+         </div>
+
+       </div>
+
+
+
+
+
+         <div class="container-fluid">
+          <div class="row">
+              <div class="rotate d-none d-md-block">
+                  <p class="color font-small mr-5 mb-5">&copy; Confide 2019</p>
+              </div>
+          </div>
+      </div>
+       <div class="container">
+              <div class="row d-none d-md-block">  
+                    <nav class="navbar navbar-expand-lg fixed-bottom navbar-light shadow col-10 offset-1">
+                        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                          <a class='pb-2 mt-1 underline' id='c' href='how.html'>How it works</a>
+                          <a class='pb-2 mt-1 underline' id='o' href='social.html'>Community</a>
+                          <a class='pb-2 mt-1 underline' id='l' href='faqs.html'>FAQs</a>
+                          <a class='pb-2 mt-1 underline' id='a' href='contactus.html'>Contact us</a>
+                          <a class='pb-2 mt-1 underline' id='r' href='p&t.html'>Privacy & Terms</a>
+                      </div>
+                            </nav> 
+                    </div>
+                    <div class="row mt-4 mr-3 d-md-none d-flex justify-content-end">
+                        <a data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="                                
+                          <p><a class='font-weight-bold' id='c' href='how.html'>How it works</a><p>
+                          <p><a class='font-weight-bold' id='o' href='social.html'>Community</a></p>
+                          <p><a class='font-weight-bold' id='l' href='faqs.html'>FAQs</a></p>
+                          <p><a class='font-weight-bold' id='a' href='contactus.html'>Contact us</a></p>
+                          <p><a class='font-weight-bold' id='r' href='p&t.html'>Privacy & Terms</a></p>"> 
+                    <img src="img/popup.svg" class="img-fluid d-block d-md-none" alt="">
+                    </a>
+                    </div>
+                    <div class="col-sm-12 text-center d-md-none copy">
+                      <p class="color font-small ">&copy; 2020 Confide </p>
+                  </div>
+                  </div> 
+  <script src="js/jQuery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+      $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+      </script>
+</body>
+</html>
