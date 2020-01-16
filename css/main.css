@@ -3,7 +3,7 @@ body{
     overflow-x: hidden;
 }
 #index{
-    background-image: url(../img/component.png);
+    background-image: url(../img/mobile1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -14,15 +14,9 @@ body{
     padding-bottom: 3px;
     padding-right: 5px;
 }
-.last{
-    position: absolute;
-    bottom: 0;
-    right: 8px;
-}
 .bar{
     height: 0.3rem;
     width: 3vw;
-
 }
 .bar-h{
     height: 5vh;
@@ -31,7 +25,7 @@ body{
     height: 70vh;
 }
 .margin{
-    margin-top: 22.25vh;
+    margin-top: 17.25vh;
 }
 .margin-a{
     margin-bottom: auto;
@@ -63,7 +57,7 @@ body{
 
     
 }
-.color{
+#color{
     color: #6B3870;
 }
 .copy-height{
@@ -101,7 +95,7 @@ body{
 
 }
 .rotate{
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateX(25px);
     transform-origin: left;
 }
 .shadow{
@@ -178,35 +172,33 @@ body{
 ol{
     list-style-position: hanging;
 }
-
-/* .nav{
-    height: 8vh;
-    box-shadow: 0px 3px 6px #00000029;
-} */
-/* .trans-b{
-    animation: fadeLeft 2s ease-in ;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    transition: 2s linear;
+.display{
+    font-size: 60px;
 }
-
-@keyframes fadeLeft{
-    0% {
-        transform: translateX(-100%)
-    }
-    100%{
-        transform: translateX(0)
-    }
-
+.big{
+    font-size: 20px;
 }
-@keyframes change{
-    0%{
-        content: "AWESOMENESS";
-    }
-    33%{
-        content: "INNOVATION";
-    }
-    66%{
-        content: "21st Century";
-    }
+.shi{
+    transform: translateX(30%);
+}
+/* .sh{
+    transform: translateX(-5%);
 } */
+@media only screen and (min-width: 768px){
+    #index{
+        background-image: url(../img/component.png);
+    }
+}
+.pos{
+    transform: translateY(35%);
+}
+@media only screen and (min-width: 768px){
+    .pos{
+        transform: translateY(11%);
+    }
+}
+@media only screen and (min-width: 768px){
+    .both{
+        transform: translateY(30%);
+    }
+}
