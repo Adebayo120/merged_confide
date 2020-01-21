@@ -25,7 +25,7 @@ body{
     height: 70vh;
 }
 .margin{
-    margin-top: 12.25vh;
+    margin-top: 5vh;
 }
 .margin-a{
     margin-bottom: auto;
@@ -173,7 +173,7 @@ ol{
     list-style-position: hanging;
 }
 .display{
-    font-size: 60px;
+    font-size: 50px;
 }
 .big{
     font-size: 20px;
@@ -205,5 +205,10 @@ ol{
 @media only screen and (min-width: 768px){
     .margin{
         margin-top: 17.25vh;
+    }
+}
+@media only screen and (min-width: 768px){
+    .display{
+        font-size: 60px;
     }
 }
