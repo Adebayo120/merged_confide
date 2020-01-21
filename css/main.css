@@ -25,7 +25,7 @@ body{
     height: 70vh;
 }
 .margin{
-    margin-top: 5vh;
+    margin-top: 0;
 }
 .margin-a{
     margin-bottom: auto;
@@ -173,7 +173,7 @@ ol{
     list-style-position: hanging;
 }
 .display{
-    font-size: 50px;
+    font-size: 40px;
 }
 .big{
     font-size: 20px;
