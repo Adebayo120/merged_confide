@@ -139,6 +139,15 @@ input[type="checkbox"]:hover + label{
     transition: ease-in-out 0.5s ;
     /* background-color: rgb(79, 131, 79); */
 }
+.bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.center{
+    font-size: small; 
+    text-align: center;
+}
 @media only screen and (min-width: 768px){
     #phone{
         margin-right: 82px;

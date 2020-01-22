@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
 </head>
-<body class="overflow-hidden pb-5 pb-sm-0">
-    <div class="container-fluid ">
+<body class="overflow-hidden">
+    <div class="container-fluid mt-1 mt-sm-0">
         <div class="row justify-content-between mb-3">
           <nav class="navbar navbar-expand-lg d-flex align-center navbar-success">
            <a href="index.html"><img src="img/confide.svg" class="navbar-brand ml-3 ml-md-5 img-fluid d-none d-sm-block">
@@ -31,40 +31,46 @@
                     <img src="img/page5.svg" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-8">
-                    <h3 class="mt-2 mt-sm-5">Just one more thing left</h3>
+                    <h3 class="mt-2 mt-sm-3">Just one more thing left</h3>
                     <p class="color font-weight-bold mt-3">STEP 3 OF 3</p>
                     <p>which area do you need counselling<br><small class="color">(you can select multiple places)</small></p>
-                    <form action="" method="post">
-                        <div class="mt-4">
-                          <input type="checkbox" name="counselarea[]" id="guidiance & career" class="d-none" value="guidiance & career"><label for="guidiance & career" class="mr-3 border border-dark rounded-lg py-1 px-3 main">Guidiance & Career</label>
-                          <input type="checkbox" name="counselarea[]" id="marriage & family" class="d-none" value="marriage & family"><label for="marriage & family" class="border border-dark rounded-lg py-1 px-3 main">Marriage & Family</label>
-                           </div>
-                           <div class="mt-3">
-                           <input type="checkbox" name="counselarea[]" id="anxiety" class="d-none" value="anxiety"><label for="anxiety" class="mr-2 border border-dark rounded-lg py-1 px-3 main">Anxiety</label>
-                           <input type="checkbox" name="counselarea[]" id="depression" class="d-none" value="depression"><label for="depression" class="mr-2 border border-dark rounded-lg py-1 px-3 main">Depression</label>
-                           <input type="checkbox" name="counselarea[]" id="relationship" class="d-none" value="relationship"><label for="relationship" class=" border border-dark rounded-lg py-1 px-3 p main">Relationship</label>
-                               </div>
-                        <div class="mt-3">
-                            <input type="checkbox" name="counselarea[]" id="addiction" class="d-none" value="addiction"><label for="addiction" class="mr-2 border border-dark rounded-lg py-1 px-4 main">Addiction</label>
-                            <input type="checkbox" name="counselarea[]" id="abuse" class="d-none" value="abuse"><label for="abuse" class="mr-2 border border-dark rounded-lg py-1 px-3 main">Abuse</label>
-                            <input type="checkbox" name="counselarea[]" id="anger" class="d-none" value="anger"><label for="anger" class="mr-2 border border-dark rounded-lg py-1 px-3 main">Anger</label>
-                          </div>
-                          <div class="mt-3 mb-5 mb-lg-3">
-                            <input type="checkbox" name="counselarea[]" id="rehabilitation" class="d-none" value="rehabilitation"><label for="rehabilitation" class=" border border-dark rounded-lg py-1 px-3 mr-2 main">Rehabilitation</label>
-                            <input type="checkbox" name="counselarea[]" id="trauma" class="d-none" value="trauma"><label for="trauma" class=" border border-dark rounded-lg py-1 px-3 turn main">Trauma</label>
-                          </div>
-                          <div class="mr-3 mr-sm-0">
-                            <div class="d-flex flex-row justify-content-between justify-content-lg-start mr-5 mr-sm-0">
-                                <a href="clientform3.html" type="button" class="btn btn-outline-success px-5 mr-lg-5 ">Back</a>
-                                <button type="submit" class="btn btn-success px-5 mr-5 mr-sm-0 ml-lg-4">Submit</button>
-                              </div>
-                          </div>
+                    <form action="" method="post" class="">
+                        <!-- addiction set -->
+                 <div class="mt-4 d-flex flex-row justify-content-md-between justify-content-lg-start">
+                     <input type="checkbox" name="counselarea[]" id="addiction" class="d-none" value="addiction"><label for="addiction" class="mr-2 mr-lg-4 border border-dark rounded-lg py-1 px-4 px-md-4">Addiction</label>
+                     <input type="checkbox" name="counselarea[]" id="abuse" class="d-none" value="abuse"><label for="abuse" class="mr-2 mr-lg-4 border border-dark rounded-lg py-1 px-3 px-md-5">Abuse</label>
+                     <input type="checkbox" name="counselarea[]" id="anger" class="d-none" value="anger"><label for="anger" class=" border border-dark rounded-lg py-1 px-3 px-md-4">Anger</label>
+                   </div>
+                   <!-- anxiety set -->
+                   <div class="mt-3 d-flex flex-row justify-content-start">
+                       <input type="checkbox" name="counselarea[]" id="anxiety" class="d-none" value="anxiety"><label for="anxiety" class="mr-2 mr-lg-4 border border-dark rounded-lg py-1 px-3 px-md-5">Anxiety</label>
+                       <input type="checkbox" name="counselarea[]" id="marriage & family" class="d-none" value="marriage & family"><label for="marriage & family" class="border border-dark rounded-lg py-1 px-3 px-md-5">Marriage & Family</label>
+                    </div>
+                    <!-- depression set -->
+                    <div class="mt-3 d-flex flex-row justify-content-start">
+                        <input type="checkbox" name="counselarea[]" id="depression" class="d-none" value="depression"><label for="depression" class="mr-2 mr-lg-3 border border-dark rounded-lg py-1 px-3 px-md-5">Depression</label>
+                        <input type="checkbox" name="counselarea[]" id="relationship" class="d-none" value="relationship"><label for="relationship" class=" border border-dark rounded-lg py-1 px-3 px-md-5">Relationship</label>
+                    </div>
+                    <!-- rehabilitation set -->
+               <div class="mt-3">
+                 <input type="checkbox" name="counselarea[]" id="rehabilitation" class="d-none" value="rehabilitation"><label for="rehabilitation" class="mr-lg-3 border border-dark rounded-lg py-1 px-3 mr-2">Rehabilitation</label>
+                 <input type="checkbox" name="counselarea[]" id="trauma" class="d-none" value="trauma"><label for="trauma" class=" border border-dark rounded-lg py-1 px-3 px-lg-4 turn">Trauma</label>
+             </div>
+                <div class="mt-3 mb-5 mb-md-3 mb-lg-3">
+                    <input type="checkbox" name="counselarea[]" id="guidiance & career" class="d-none" value="guidiance & career"><label for="guidiance & career" class=" border border-dark rounded-lg py-1 px-3">Guidiance & Career</label>
+                    </div>
+                    <div class="mr-3 mr-sm-0">
+                    <div class="d-flex flex-row justify-content-between justify-content-lg-start mr-5 mr-sm-0">
+                        <a href="clientform3.html" type="button" class="btn btn-outline-success px-3 px-sm-5 mr-lg-5 ">Back</a>
+                        <button type="submit" class="btn btn-success px-3 px-sm-5 mr-5 mr-sm-0 ml-lg-4">Submit</button>
+                        </div>
+                    </div>
 
-                        </form>
-                    </div>  
-                </div>
-            </div>
+                </form>
+            </div>  
         </div>
+    </div>
+</div>
 
 
         <div class="container-fluid">
@@ -96,13 +102,9 @@
                       <img src="img/popup.svg" class="img-fluid d-block d-md-none mb-5" alt="">
                 </a>
                 </div>
-                <div class="d-md-none">
-                <nav class="navbar navbar-expand-lg position-sticky sticky-bottom navbar-light">
-                    <div class="collapse navbar-collapse d-flex justify-content-center mb-0" id="navbarNav">
-                      <small class="text-dark font-small mb-0">&copy; 2020 Confide </small>
-                  </div>
-                        </nav> 
-              </div>
+              </div> 
+              <div class="bottom d-md-none">
+                <p class="text-dark center mb-0">&copy; 2020 Confide </p>
               </div>   
     <script src="js/jQuery.min.js"></script>
     <script src="js/popper.js"></script>
