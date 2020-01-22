@@ -96,8 +96,76 @@ ol{
 .pos{
     transform: translateY(25%);
 }
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: green;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px double #bfbfbf;
+}
+.mar{
+    margin-top: -5px;
+}
+.m{
+    margin-right: 75px;
+}
+input[type="checkbox"]:checked + label{
+    transition: ease-in-out 1s ;
+    background-color: rgb(9, 128, 9);
+    color:white;
+}
+input[type="checkbox"]:hover + label{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s ;
+    /* background-color: rgb(79, 131, 79); */
+}
+@media only screen and (min-width: 768px){
+    #phone{
+        margin-right: 82px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .m{
+        margin-right: 0px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .m{
+        margin-right: 135px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .m{
+        margin-right: 280px;
+    }
+}
 @media only screen and (min-width: 768px){
     .pos{
         transform: translateY(11%);
     }
 }
+.contain{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (min-width:576px){.contain{max-width:540px}}
+@media (min-width:768px){.contain{max-width:720px}}
+@media (min-width:992px){.contain{max-width:960px}}
+@media (min-width:1200px){.contain{max-width:1140px;padding-right:55px;padding-left:55px}}

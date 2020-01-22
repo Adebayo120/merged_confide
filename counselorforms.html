@@ -13,29 +13,29 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
 </head>
-<body class=" pb-5 pb-sm-0">
+<body class="">
         <div class="container-fluid ">
-         <div class="row justify-content-between shadow">
+         <div class="row justify-content-between">
            <nav class="navbar navbar-expand-lg d-flex align-center navbar-success">
-            <a href="index.html"><img src="img/confide.svg" class="navbar-brand ml-3 ml-md-5 img-fluid animated rotateInDownLeft fast d-none d-sm-block">
-              <img src="img/component (21).png" alt="mobile logo" class="ml-3 animated rotateInDownLeft fast d-sm-none"></a>
+            <a href="index.html"><img src="img/confide.svg" class="navbar-brand ml-3 ml-md-5 img-fluid d-none d-sm-block">
+              <img src="img/component (21).png" alt="mobile logo" class="ml-3 d-sm-none"></a>
             </nav>
            <nav class="navbar navbar-expand-lg navbar-light">
-            <a type="button" href="gratitude_page.html" class="btn btn-success mr-2 mr-md-5 animated rotateInDownRight fast">Become a Volunteer</a>
+            <a type="button" href="gratitude_page.html" class="btn btn-success mr-2 mr-md-5 ">Become a Volunteer</a>
             </nav> 
          </div> 
-         <div class="container">
-            <div class="row mt-5 offset-1">
-                <h3 class="text-muted mb-4">Hi there, i am jummy and you are?</h3>
+         <div class="container mx-2 mx-sm-0">
+            <div class="row mt-2 mt-sm-5 offset-0 offset-sm-1">
+                <h3 class=" mb-4">Hi there, i am jummy and you are?</h3>
              </div>
-           <div class="row offset-1">
+           <div class="row offset-0 offset-sm-1">
              <div class="col-lg-6">
-                <form>
+                <form class="mr-4 mr-sm-0">
                     <div class="form-group">
-                        <label for="username" class="text-muted mb-2">Enter your full name</label>
-                        <input type="text" class="form-control form-control-sm w-75" id="username" aria-describedby="emailHelp">
+                        <label for="username" class=" mb-2 mt-md-1">Enter your full name</label>
+                        <input type="text" class="form-control col-sm-10" id="username" aria-describedby="emailHelp">
                       </div>
-                      <div class="text-muted mt-4 mb-2">What is your gender</div>
+                      <div class=" mt-4 mt-md-5 mb-2">What is your gender</div>
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="gender" id="male" value="male">
                         <label class="form-check-label" for="male">male</label>
@@ -45,26 +45,26 @@
                         <label class="form-check-label" for="female">female</label>
                       </div>
                       <div class="form-group">
-                          <label for="email" class="text-muted mb-2 mt-4">Enter Your Email address</label>
-                          <input type="email" class="form-control form-control-sm w-75" placeholder="Eg Annie@email.com " id="email" aria-describedby="emailHelp">
+                          <label for="email" class=" mb-2 mt-4 mt-lg-5">Enter Your Email address</label>
+                          <input type="email" class="form-control col-sm-10" placeholder="Eg Annie@email.com " id="email" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="phone" class="text-muted mb-2 mt-4">Enter Your Phone Number</label>
-                            <div class="d-flex w-75">
-                            <select class="form-control form-control-sm w-25 mr-2" id="phone">
-                                    <option>234</option>
+                            <label for="phone" class=" mb-2 mt-4 mt-lg-5">Enter Your Phone Number</label>
+                            <div class="d-flex ">
+                            <select class="form-control w-25 mr-2" id="phone">
+                                    <option class="text-muted">234</option>
                             </select>
-                            <input type="text" class="form-control form-control-sm w-75" placeholder="23456789" id="phone" aria-describedby="emailHelp">
+                            <input type="text" class="form-control col-sm-7" placeholder="23456789" id="phone" aria-describedby="emailHelp">
                             </div>
                           </div>
                       
 
              </div>
-             <div class="col-lg-6">
+             <div class="col-lg-6 mr-4 mr-sm-0">
                     <div class="form-group">
-                        <label for="country" class="text-muted mb-2 mt-4 mt-lg-0">Your country</label>
-                        <select class="form-control form-control-sm w-75" id="country">
-                            <option>-select-</option>
+                        <label for="country" class=" mb-2 mt-4 mt-lg-1">Your country</label>
+                        <select class="form-control col-sm-10 " id="country">
+                            <option class="text-muted">-select-</option>
                             <option>Nigeria</option>
                             <option>Spain</option>
                             <option>France</option>
@@ -73,9 +73,9 @@
                         </select>
                         </div>
                         <div class="form-group">
-                            <label for="state" class="text-muted mb-2 mt-4 mt-lg-2">Your state</label>
-                            <select class="form-control form-control-sm w-75" id="state">
-                                <option>-select-</option>
+                            <label for="state" class=" mb-2 mt-4 mt-lg-4">Your state</label>
+                            <select class="form-control col-sm-10 " id="state">
+                                <option class="text-muted">-select-</option>
                                 <option>Lagos</option>
                                 <option>Oyo</option>
                                 <option>Sokoto</option>
@@ -83,7 +83,7 @@
                                 <option>Delta</option>
                             </select>
                           </div>
-                          <p class="text-muted mt-4 mt-lg-2 mb-2">which area do you need counselling<small class="color">(you can select multiple places)</small></p>
+                          <p class=" mt-4 mt-lg-5 mb-2">which area do you need counselling<br><small class="color">(you can select multiple places)</small></p>
                           <div class="mt-4">
                             <input type="checkbox" name="counselarea[]" id="guidiance & career" class="d-none" value="guidiance & career"><label for="guidiance & career" class="mr-3 border border-dark rounded-lg py-1 px-3 main">Guidiance & Career</label>
                             <input type="checkbox" name="counselarea[]" id="marriage & family" class="d-none" value="marriage & family"><label for="marriage & family" class="border border-dark rounded-lg py-1 px-3 main">Marriage & Family</label>
@@ -103,9 +103,9 @@
                               <input type="checkbox" name="counselarea[]" id="trauma" class="d-none" value="trauma"><label for="trauma" class=" border border-dark rounded-lg py-1 px-3 turn main">Trauma</label>
                             </div> 
                           </div>  
-                          <div class="row offset-3">
-                            <div class="col-6 mb-lg-5">
-                            <button type="submit" class="btn btn-success px-5 mt-2 mt-lg-0 d-flex fljustify-content-end mb-5">Continue</button>
+                          <div class="row offset-3 offset-sm-5">
+                            <div class="col-6 mb-lg-5 mt-md-3">
+                            <a href="success.html" type="button" class="btn btn-success px-5 mt-2 mt-lg-0 mb-5">Continue</a>
                             </div>
                           </div>  
                   </form>
@@ -121,7 +121,7 @@
        <div class="container-fluid">
         <div class="row">
             <div class="rotate d-none d-lg-block">
-                <small class="font-small mr-5 mb-5" id="color">&copy; Confide 2019</small>
+                <small class="font-small mr-5 mb-5" id="color">&copy; Confide 2020</small>
             </div>
         </div>
     </div>
@@ -137,18 +137,18 @@
               </div>
                     </nav> 
             </div>
-            <div class="row d-flex justify-content-end">
+            <div class="row d-flex justify-content-end fixed-bottom mr-1">
                 <a data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="                                
                   <p><a class='font-weight-bold' id='c' href='how.html'>How it works</a><p>
                   <p><a class='font-weight-bold' id='o' href='social.html'>Community</a></p>
                   <p><a class='font-weight-bold' id='l' href='faqs.html'>FAQs</a></p>
                   <p><a class='font-weight-bold' id='a' href='contactus.html'>Contact us</a></p>
                   <p><a class='font-weight-bold' id='r' href='p&t.html'>Privacy & Terms</a></p>"> 
-                  <img src="img/popup.svg" class="img-fluid d-block d-lg-none mb-5  mr-5" alt="">
+                  <img src="img/popup.svg" class="img-fluid d-block d-lg-none mb-5" alt="">
             </a>
             </div>
             <div class="d-lg-none">
-            <nav class="navbar navbar-expand-lg fixed-bottom navbar-light">
+            <nav class="navbar navbar-expand-lg position-sticky sticky-bottom navbar-light">
                 <div class="collapse navbar-collapse d-flex justify-content-center mb-0" id="navbarNav">
                   <small class="text-dark font-small mb-0">&copy; 2020 Confide </small>
               </div>
