@@ -127,7 +127,7 @@ input[type='radio']:checked:after {
     margin-top: -5px;
 }
 .m{
-    margin-right: 75px;
+    margin-right: 50px;
 }
 input[type="checkbox"]:checked + label{
     transition: ease-in-out 1s ;
@@ -160,7 +160,7 @@ input[type="checkbox"]:hover + label{
 }
 @media only screen and (min-width: 992px){
     .m{
-        margin-right: 125px;
+        margin-right: 135px;
     }
 }
 @media only screen and (min-width: 1200px){
