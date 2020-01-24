@@ -148,6 +148,16 @@ input[type="checkbox"]:hover + label{
     font-size: small; 
     text-align: center;
 }
+.iframe{
+    width: 440px; 
+    height: 1187px;
+}
+@media only screen and (min-width: 768px){
+    .iframe{
+        width: 640px; 
+        height: 1187px;
+    }
+}
 @media only screen and (min-width: 768px){
     #phone{
         margin-right: 82px;
