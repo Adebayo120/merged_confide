@@ -154,8 +154,8 @@ input[type="checkbox"]:hover + label{
 }
 @media only screen and (min-width: 768px){
     .iframe{
-        width: 640px; 
-        height: 1187px;
+        width: 90%; 
+        height: 100%;
     }
 }
 @media only screen and (min-width: 768px){
