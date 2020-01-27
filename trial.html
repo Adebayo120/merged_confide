@@ -7,32 +7,41 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="radio">
     <script>
 function timeConversion(s) {
-        let totalTimeNumber=s.length;
-        let hour=parseInt(s.slice(0, 2));
-        var minute=s.slice (3, 5);
-        var seconds=s.slice (6, 8);
-        var ampere=s.slice(totalTimeNumber-2, totalTimeNumber); 
-        if (hour > 12){
-        alert("please check the inputed hour again");
-        }else if( minute> 59){
-        alert("please check the inputed minutes again");
-              }else if(seconds > 59){
-                  alert("please check the inputed seconds again");
-                }else if((hour==12)&&(ampere=="am")) {
-                     changedHour= '00';
-                     console.log(changedHour+": "+ minute+": "+ seconds);
-              }else if((hour!==12)&&(ampere=="am")){
-           console.log(s);
-        }else if((hour===12)&& (ampere==="pm")){
-            console.log(s);
-        }else if(ampere==="pm") {
-            var changedHour=hour+12;
-            console.log(changedHour+": "+ minute+": "+ seconds);
-       }
+    //     let totalTimeNumber=s.length;
+    //     let hour=parseInt(s.slice(0, 2));
+    //     var minute=s.slice (3, 5);
+    //     var seconds=s.slice (6, 8);
+    //     var ampere=s.slice(totalTimeNumber-2, totalTimeNumber); 
+    //     if (hour > 12){
+    //     alert("please check the inputed hour again");
+    //     }else if( minute> 59){
+    //     alert("please check the inputed minutes again");
+    //           }else if(seconds > 59){
+    //               alert("please check the inputed seconds again");
+    //             }else if((hour==12)&&(ampere=="am")) {
+    //                  changedHour= '00';
+    //                  console.log(changedHour+": "+ minute+": "+ seconds);
+    //           }else if((hour!==12)&&(ampere=="am")){
+    //        console.log(s);
+    //     }else if((hour===12)&& (ampere==="pm")){
+    //         console.log(s);
+    //     }else if(ampere==="pm") {
+    //         var changedHour=hour+12;
+    //         console.log(changedHour+": "+ minute+": "+ seconds);
+    //    }
+    let timeDeterminant = s.slice(-2);
+    let timeArray = s.slice(0, -2).split(":");
+    if (timeDeterminant === "AM" && timeArray[0] === "12") {
+        timeArray[0] = "00";
+    } else if (timeDeterminant === "PM") {
+        timeArray[0] = (timeArray[0] % 12) + 12
     }
-    timeConversion("02:39:34pm");
+    write(timeArray.join(":"));
+    }
+    timeConversion("12:39:34AM");
         </script>
 </body>
 </html>
