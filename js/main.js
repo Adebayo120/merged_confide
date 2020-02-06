@@ -1,5 +1,8 @@
-
+year= new Date().getFullYear();
+copy= '&copy '+ `${year}`+ ' confide'; 
 $(document).ready(function(){
-    'use strict';
-    console.log('main.js loaded');
+$(".copy").html(copy);
+$("img.me-nu").click(function(){
+    $("div#menu-tray").toggle();
+});
 });

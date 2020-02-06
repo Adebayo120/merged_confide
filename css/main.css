@@ -47,15 +47,37 @@ body{
 .foot{
     bottom: 0;
 }
-
+/* my css for the menu icon */
 .menu-pos{
-    position: absolute;
-    box-sizing: content-box;
-    right: 5px;
-    margin-top: -20px;
-    bottom: 0;
-
-    
+    position: fixed;
+    bottom: 5px;
+}
+.low{
+    position: fixed;
+    bottom: 0px;
+    color: #6B3870;
+}
+#m-icon{
+    transition: ease-out 3s;
+}
+#menu-tray{
+    min-height: 170px;
+    z-index: 1px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    transform-origin: bottom;
+    transition: .5s;
+    display: none;
+}
+#menu-tray a{
+    margin-bottom: auto;
+    margin-top: auto;
+    color: #6B3870;
+    font-weight: bold;
+    text-decoration: none;
 }
 #color{
     color: #6B3870;
@@ -82,7 +104,9 @@ body{
 .fonts{
     font-size: 1.5rem;
 }
-
+.how-font{
+    font-size: 2rem;
+}
 .font-small{
     font-size: 13px;
 }
@@ -97,6 +121,12 @@ body{
 .rotate{
     transform: rotate(90deg) translateX(25px);
     transform-origin: left;
+    position: fixed;
+    color: #6B3870;
+    top: 470px;
+}
+.img-h{
+    height: 430px;
 }
 .shadow{
     box-shadow: 0px 3px 6px #00000029;
@@ -184,10 +214,7 @@ ol{
 /* .sh{
     transform: translateX(-5%);
 } */
-.little{
-    margin-top: 100px;
-}
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
     #index{
         background-image: url(../img/component.png);
     }
@@ -214,4 +241,4 @@ ol{
     .display{
         font-size: 60px;
     }
-}
+} */
