@@ -3,6 +3,11 @@ body{
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
 }
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .we{
     height: 100vh;
     background-image: url("img/landing.png");
